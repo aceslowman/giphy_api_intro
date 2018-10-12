@@ -6,7 +6,6 @@
     <title>Search Giphy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
 </head>
@@ -15,11 +14,12 @@
         <form>
             <input type="text" id="search" placeholder="Gimme da GIPHY!">
             <button id="search" type="submit">SEARCH</button>
-            <button id="stop" type="submit">STOP</button>
         </form>
-        <div class="gifcontainer">
-
-        </div>
+        <div id="gifcontainer">
+            <img id="gifImgs" src="" alt="" class="gifImg">	
+            <button id="backBtn" class="back">Back</button>
+            <button id="nextBtn" class="next">Next</button>
+        </div>  
     </div>
     <!-- JS file -->
 <script src="main.js"></script>
