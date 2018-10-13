@@ -32,7 +32,7 @@ $('document').ready(function(){
 							console.log(gifImgUrl); 								     
 					}
 				$('.gifImg').attr("src", gifImgUrl[k])
-					
+
 						
 							$('#nextBtn').on('click', function(e){
 								//want to add listener and response for left or right arrow key

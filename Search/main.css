@@ -21,6 +21,8 @@ input #search {
 
 button #search {
     margin: 1em;
+    
+    
 }
 
 div #gifcontainer {
@@ -34,4 +36,7 @@ div #gifcontainer {
 div #buttonContainer {
   grid-column: 1/3;
   text-align: center;
+}
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
