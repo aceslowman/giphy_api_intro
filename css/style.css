@@ -1,0 +1,21 @@
+ul.gif-list {
+  list-style-type: none;
+  display: inline-block;
+}
+.gif-list li {
+  float: left;
+}
+.container {
+  text-align: center;
+}
+
+.loading {
+  background: transparent url('https://media.giphy.com/media/swhRkVYLJDrCE/giphy.gif') center no-repeat;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  min-width: 200px;
+
+  height: 200px;
+}

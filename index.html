@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>GIPHY Tabs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/flick/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon"
+      type="image/png"
+      href="https://www.logolynx.com/images/logolynx/e2/e2861b0bf040ce1f178da0530afce9ed.png">
+    <script
+    src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+    crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="logo"><img width="100" src="https://www.logolynx.com/images/logolynx/e2/e2861b0bf040ce1f178da0530afce9ed.png"></div>
+    <div id="tabs">
+      <ul>
+        <li><a href="#search">Search</a></li>
+        <li><a href="#trending" id="trending-link">Trending</a></li>
+        <li><a href="#translate">Translate</a></li>
+        <li><a href="#random" id="random-link">Random</a></li>
+      </ul>
+        <div id="search" class="container">
+          <h1>Search for a gif!</h1>
+          <form>
+            <input type="text" id="search-input" placeholder="Search for a gif..."/>
+            <button type="submit">Search</button>
+          </form>
+          <div id="search-output"></div>
+        </div>
+        <div id="trending" class="container">
+          <div id="trending-output"></div>
+        </div>
+        <div id="translate" class="container">
+          <h1>Find a related gif:</h1>
+          <form>
+            <p>Search Term:</p>
+            <input type="text" id="translate-input" placeholder="Search for a gif..."/>
+            <p>Weirdness Level (1-10):</p>
+            <div class="slidecontainer">
+              <input type="range" min="1" max="10" value="2" step="1" class="slider" id="weird-range" data-show-value="true">
+              <p><span id="range-value"></span></p>
+            </div>
+            <button type="submit">Search</button>
+
+          </form>
+          <div id="translate-output"></div>
+        </div>
+        <div id="random" class="container">
+          <div id="random-output"></div>
+          <button type="submit" id="random-refresh">Refresh for a new one!</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
