@@ -1,4 +1,4 @@
-$( 'document' ).ready( function() {
+$( 'document' ).ready( function () {
   function randomSpan( max ) {
     return Math.floor( Math.random() * Math.floor( max ) );
   };
@@ -15,7 +15,7 @@ $( 'document' ).ready( function() {
 
     } ) //end ajax get
 
-    .done( function( data ) {
+    .done( function ( data ) {
       console.log( data );
       for ( let i = 0; i < data.data.length; i++ ) {
         const gifImgUrl = data.data[ i ].images.fixed_height_downsampled.url;
@@ -25,7 +25,7 @@ $( 'document' ).ready( function() {
 
     } );
 
-  $( '.reveal' ).on( 'click', function( e ) {
+  $( '.reveal' ).on( 'click', function ( e ) {
     $( '.gridWrapper' ).fadeIn();
     $( '.reveal' ).hide();
   } )
