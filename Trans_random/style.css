@@ -1,0 +1,52 @@
+/*Font styles*/
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Arsenal', sans-serif;
+font-family: 'Noto Serif KR', sans-serif; */
+/* Body Styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-left: 1em;
+  margin-right: -6em;
+}
+
+/* Grid Areas */
+.Header {
+  grid-area: Header;
+  font-size: 3em;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.intro {
+  grid-area: Intro;
+  font-family: 'Noto Serif KR', sans-serif;
+}
+
+.story {
+  grid-area: story;
+  font-family: 'Noto Serif KR', sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "Header ...... ......"
+    "Header ..... ....."
+    "Header ..... ....."
+    "...... Intro Intro"
+    "story story story";
+  grid-gap: 10px;
+  width: 100vw;
+  height: 100vh;
+  margin: 1em;
+  padding: 10px;
+}
+
+.box {
+  background-color: rgb(164, 164, 164);
+  border-radius: 5px;
+  padding: 20px;
+}
